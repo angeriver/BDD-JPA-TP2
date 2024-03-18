@@ -11,11 +11,7 @@ public class Client {
     private String nom;
     private String email;
 
-    @OneToOne
-    @JoinColumn(name="adresse")
-    private Adresse adresse;
-
-    @OneToMany(mappedBy = "id")
+    @OneToMany(mappedBy = "client")
     private Set<Commande> commandes;
 
 }

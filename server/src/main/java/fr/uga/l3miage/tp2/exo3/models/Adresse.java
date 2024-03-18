@@ -12,6 +12,6 @@ public class Adresse {
     private String code_postal;
     private String ville;
 
-    @OneToOne(mappedBy="id")
+    @OneToOne
     private Client client;
 }

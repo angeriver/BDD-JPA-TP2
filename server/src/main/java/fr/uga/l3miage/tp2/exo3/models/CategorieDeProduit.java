@@ -10,7 +10,6 @@ public class CategorieDeProduit {
 
     private String nom;
 
-    @OneToMany
-    @JoinColumn(name="id_produit")
+    @OneToMany(mappedBy = "categorie")
     private Set<Produit> produits;
 }

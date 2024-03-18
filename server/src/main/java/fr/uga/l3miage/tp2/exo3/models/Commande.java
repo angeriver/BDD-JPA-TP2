@@ -13,9 +13,6 @@ public class Commande {
     private Double montant_total;
 
     @ManyToOne
-    @JoinColumn(name="client")
     private Client client;
 
-    @OneToMany(mappedBy="id")
-    private Set<Produit> produits;
 }

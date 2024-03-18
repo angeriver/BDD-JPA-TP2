@@ -13,10 +13,9 @@ public class Produit {
     private Integer quantite;
 
     @ManyToOne
-    @JoinColumn(name = "id_commande")
     private Commande commande;
 
-    @OneToMany(mappedBy="id")
-    private Set<CategorieDeProduit> categories_produits;
+    @ManyToOne
+    private CategorieDeProduit categorie;
     
 }
